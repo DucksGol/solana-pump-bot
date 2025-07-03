@@ -1,5 +1,5 @@
 name: solana-pump-bot
 services:
   app:
-    build_command: pip install -r requirements.txt
-    start_command: python main.py
+    build_command: docker build -t app .
+    start_command: docker run app
