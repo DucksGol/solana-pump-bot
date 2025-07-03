@@ -1,5 +1,6 @@
 name: solana-pump-bot
 services:
   app:
+    type: python
     build_command: docker build -t app .
     start_command: docker run app
