@@ -4,3 +4,10 @@ services:
     type: python
     build_command: docker build -t app .
     start_command: docker run app
+    env_vars:
+      TELEGRAM_TOKEN: $TELEGRAM_TOKEN
+      ALLOWED_USER_ID: $ALLOWED_USER_ID
+      WALLET_ADDRESS: $WALLET_ADDRESS
+      PRIVATE_KEY: $PRIVATE_KEY
+      WITHDRAW_PERCENT: $WITHDRAW_PERCENT
+      MIN_PROFIT_PERCENT: $MIN_PROFIT_PERCENT
